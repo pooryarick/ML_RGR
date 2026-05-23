@@ -156,11 +156,11 @@ elif page == "Страница 4: Инференс моделей ML":
             
             with c1:
                 carat = st.number_input("Вес камня в каратах [carat]:", min_value=0.1, max_value=5.0, value=0.7, step=0.01)
-                cut = st.slider("Качество огранки [cut] (ранг):", min_value=1, max_value=5, value=4, step=1)
+                cut = st.slider("Качество огранки [cut] (ранг):", min_value=0, max_value=4, value=3, step=1)
                 color = st.slider("Цвет камня [color] (ранг):", min_value=0, max_value=6, value=3, step=1)
                 
             with c2:
-                clarity = st.slider("Чистота камня [clarity] (ранг):", min_value=1, max_value=8, value=3, step=1)
+                clarity = st.slider("Чистота камня [clarity] (ранг):", min_value=0, max_value=7, value=3, step=1)
                 depth = st.number_input("Глубина в % [depth]:", min_value=40.0, max_value=80.0, value=61.5, step=0.1)
                 table = st.number_input("Ширина площадки в % [table]:", min_value=40.0, max_value=90.0, value=57.0, step=0.1)
                 
